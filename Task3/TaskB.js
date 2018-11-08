@@ -9,6 +9,15 @@ var factorial = function (n) {
 }
 console.log(factorial(5));
 
+function factorialize(num) {
+    var factorial = 1;
+    for (var i = 2; i <= num; i++) {
+        factorial *= i;
+    }
+    return factorial;
+}
+console.log(factorialize(5));
+
 //B)
 console.log("Function calculating nth number in Fibonacci sequence.");
 function fibonacci(num) {
