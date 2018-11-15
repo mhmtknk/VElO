@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container div:nth-child(even){
+    background-color: rgb(252, 247, 241);
+}
+.container{
+    display: grid;
+    grid-auto-columns: 1fr 5fr;
+    grid-template-areas: 
+    "title title"
+    "sidebar content"
+    ;
+}
+.title{
+grid-area: title;
+text-align: center;
+}
+#k1 {
+    box-shadow: 5px 5px 2px 2px gray;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    height: 250px;
+    margin-bottom: 10px;
+}
+.sidebar{
+grid-area: sidebar;
+justify-self: center;
+}
+.sidebar img {
+    width: 300px;
+    height: 200px;
+
+}
+.content{
+    grid-area: content;
+}
+.content p {
+    width: 45vh;
+    float: left;
+}
+.footer{
+    text-align: center;
+}
+.footer h1{
+    text-align: center;
+}
+aside {
+    max-width: 200px;
+    font-size: 1.4em;
+    color: red;
+    padding: 1em;
+}

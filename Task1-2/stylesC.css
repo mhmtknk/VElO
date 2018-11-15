@@ -1,0 +1,14 @@
+p {
+    font-family: "Lucida Console", monospace;
+}
+table, th, td {
+    border: 1px solid #22bebe;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: georgian;
+}
