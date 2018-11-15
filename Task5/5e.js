@@ -1,4 +1,4 @@
-
+﻿
 //e)	Task D with classes 😉
 
 class Student {
@@ -29,5 +29,5 @@ class Student {
     this.lastname = words[1] || '';
   }
 }
-const student = new Student('Mehmet', 'KONUK', 16226, [5, 4, 3, 2]);
+const student = new Student('Mehmet', 'KONUK', 13108, [5, 4, 3, 2]);
 console.log(student.average);
