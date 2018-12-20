@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(0, 81, 255);
+            background-color: burlywood;
+        }
+        .grid-item1 {
+            grid-area: cels;
+        }
+        .grid-item2 {
+            grid-area: fahr;
+        }
+        .grid-item3 {
+            grid-area: kelvin;
+        }
+        .grid-item4 {
+            grid-area: km;
+        }
+        .grid-item5 {
+            grid-area: mile;
+        }
+        input[type=number] {
+            width: 60%;
+            padding: 10px;
+        }
+        label {
+            font-size: 1.2em;
+        }
+        .grid-container {
+            padding: 15% 0 0 0;
+            grid-gap: 20px;
+            display: grid;
+            grid-template-areas: 'km km km mile mile mile' 'cels cels fahr fahr kelvin kelvin';
+            justify-content: center;   
+        }
+        .grid-container > div {
+        }
+        
+    </style>
+    <script src="dist/bundle.js"></script>
+    <meta charset="UTF-8">
+    <title>s13108 Mehmet KONUK</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+                <label for="cels">Celsius</label>
+                <input type="number" id="celsius" placeholder="°C">
+        </div>
+        <div class="grid-item2">
+                <label for="fahr">Fahrenheit</label>
+                <input type="number" id="fahr" placeholder="°F">
+        </div>
+        <div class="grid-item3">
+                <label for="kelvin">Kelvin</label>
+                <input type="number" id="kelvin" placeholder="°K">
+        </div>
+        <div class="grid-item4">
+                <label for="km">Kilometer</label>
+                <input type="number" id="km" placeholder="Km">
+        </div>
+        <div class="grid-item5">
+                <label for="mile">Mile</label>
+                <input type="number" id="mile" placeholder="mi">
+        </div>
+    </div>
+</body>
+</html>
